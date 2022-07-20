@@ -13,8 +13,15 @@ main {
 a {
   color: inherit;
   text-decoration: inherit;
+  padding: 4px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: all 300ms ease;
 }
 
+a:hover {
+  color: #6415ff;
+  border-bottom: 2px solid #6415ff;
+}
 
 h1 {
   font-size: 48px;
@@ -64,6 +71,12 @@ nav {
 .left__side {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.left__side:hover {
+  color: #6415ff;
 }
 
 .logo {
@@ -95,6 +108,13 @@ nav {
   color: #fff;
   border-radius: 50px;
   padding: 12px 32px;
+  transition: all 300ms ease;
+}
+
+.nav__link--primary:hover {
+  color: #fff;
+  background-color: rgb(80, 17, 204);
+  text-decoration: none;
 }
 
 .nav__burger {
@@ -104,6 +124,11 @@ nav {
   font-size: 28px;
   text-align: center;
   cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.nav__burger:hover {
+  color: #6415ff;
 }
 
 .menu {
@@ -136,6 +161,11 @@ nav {
   font-size: 28px;
   text-align: center;
   cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.nav__burger--close:hover {
+  color: #6415ff;
 }
 
 .menu__links {
@@ -153,6 +183,7 @@ nav {
   font-weight: 600;
   color: #243e63;
   letter-spacing: .35px;
+  border: 2px solid rgba(0, 0, 0, 0);
 }
 
 .menu__link--btn {
@@ -161,6 +192,12 @@ nav {
   background-color: #6415ff;
   border-radius: 100px;
   margin-bottom: 16px;
+}
+
+.menu__link--btn:hover {
+  color: #fff;
+  background-color: rgb(80, 17, 204);
+  text-decoration: none;
 }
 
 @media (max-width: 1024px) {
@@ -212,6 +249,11 @@ nav {
   border: 2px solid lightgray;
   font-size: 16px;
   font-weight: 500;
+  transition: all 300ms ease;
+}
+
+.landing__email--input:hover {
+  border-color: rgb(160, 174, 192);
 }
 
 .landing__email--btn {
@@ -228,6 +270,11 @@ nav {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.landing__email--btn:hover {
+  background-color: rgb(60, 13, 153);
 }
 
 .landing__customers {
@@ -380,6 +427,7 @@ nav {
   font-weight: 500;
   color: #7c8ba1;
   line-height: 2;
+  margin-top: 16px;
 }
 
 @media (max-width: 1024px) {
@@ -416,6 +464,10 @@ nav {
   .service__right--side {
     padding: 0;
     margin-top: 16px;
+  }
+
+  .service__description {
+    margin-top: 4px;
   }
 }
 
@@ -456,6 +508,11 @@ nav {
   font-weight: 700;
   font-size: 14px;
   cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.learn__btn:hover {
+  background-color: rgb(80, 17, 204);
 }
 
 .qw__fig {
@@ -636,6 +693,10 @@ nav {
   background-color: #9ae6b4;
 }
 
+.value__icon--two {
+  background-color: #feb2b2;
+}
+
 .value__label {
   margin-left: 12px;
   font-size: 20px;
@@ -749,12 +810,24 @@ nav {
   z-index: -1;
 }
 
+.plan__style--one {
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__style--three {
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
 .plan__card {
   position: relative;
   border: 1px solid rgba(229, 231, 235);
   border-radius: 8px;
   text-align: center;
   overflow: hidden;
+}
+
+.plan__card--two {
+  background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
 }
 
 .plan__top, .plan__middle, .plan__bottom {
@@ -769,11 +842,19 @@ nav {
   border-top: 2px solid #e5e7eb;
 }
 
+.plan__border--two {
+  border-color: rgb(102, 126, 234);
+}
+
 .plan__name {
   font-weight: 700;
   font-size: 20px;
   color: #1a202c;
   margin-bottom: 0 auto;
+}
+
+.plan__name--two {
+  color: #f7fafc;
 }
 
 .plan__price {
@@ -783,17 +864,29 @@ nav {
   margin: 4px auto;
 }
 
+.plan__price--two {
+  color: #f7fafc;
+}
+
 .plan__duration {
   font-size: 16px;
   font-weight: 700;
   color: #a0aec0;
 }
 
+.plan__duration--two {
+  color: #edf2f7;
+}
+
 .plan__middle--title {
-  font-size: 20px;
+  font-size: 16px;
   color: #1a202c;
   font-weight: 700;
   letter-spacing: 0.025em;
+}
+
+.plan__middle--title_two {
+  color: #f7fafc;
 }
 
 .plan__middle--feature {
@@ -801,6 +894,10 @@ nav {
   font-size: 16px;
   color: #718096;
   font-weight: 500;
+}
+
+.plan__middle--feature_two {
+  color: #e2e8f0;
 }
 
 .plan__bottom--btn {
@@ -817,6 +914,25 @@ nav {
   color: #f7fafc;
   background-color: rgb(56, 178, 172);
   cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.plan__bottom--btn_one {
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__bottom--btn_two {
+  background-color: #f7fafc;
+  color: #6415ff;
+}
+
+.plan__bottom--btn_three {
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.plan__bottom--btn:hover {
+  transform: translate(1px, -1px);
+  box-shadow: 0px 12px 36px rgb(0 0 0 / 15%);
 }
 
 @media (max-width: 1024px) {
@@ -999,6 +1115,12 @@ nav {
   padding: 16px 40px;
   margin-top: 20px;
   background-color: #edf2f7;
+  cursor: not-allowed;
+  transition: all 300ms ease;
+}
+
+.question:hover {
+  background-color: rgb(226, 232, 240);
 }
 
 .question__text {
@@ -1047,6 +1169,11 @@ nav {
   padding: 20px 40px;
   margin-right: 20px;
   cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.get__started--btn:hover {
+  background-color: rgb(229, 62, 62);
 }
 
 .contact__us--btn {
@@ -1064,6 +1191,12 @@ nav {
   background-color: transparent;
   margin-left: 20px;
   cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.contact__us--btn:hover {
+  background-color: rgb(247, 250, 252);
+  color: rgb(100, 21, 255);
 }
 
 @media (max-width: 1024px) {
@@ -1124,7 +1257,6 @@ nav {
   .contact__us--btn {
     min-width: 155px;
   }
-
 }
 
 /* FOOTER TWO */
@@ -1158,10 +1290,17 @@ nav {
 }
 
 .footer__link {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   color: #f7fafc;
   font-size: 14px;
   font-weight: 500;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  padding: 4px 0;
+  transition: all 300ms ease;
+}
+
+.footer__link:hover {
+  border-color: #fff;
 }
 
 .footer__border {
@@ -1212,6 +1351,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 300ms ease;
+}
+
+.footer__social--fig:hover {
+  background-color: rgb(203, 213, 224);
+  color: #000;
 }
 
 @media (max-width: 768px) {
