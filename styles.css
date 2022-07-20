@@ -314,6 +314,7 @@ nav {
     position: relative;
     max-width: 448px;
     width: 100%;
+    margin-right: 0;
   }
 }
 
@@ -487,9 +488,7 @@ nav {
 }
 
 @media (max-width: 640px) {
-  h2 {
-    font-size: 30px;
-  }
+  
 
   .qw__p {
     font-size: 14px;
@@ -959,6 +958,10 @@ nav {
   .testi__p {
     font-size: 14px;
   }
+
+  h2 {
+    font-size: 30px;
+  }
 }
 
 /* FAQS */
@@ -967,7 +970,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 96px;
 }
 
 .faq__description {
@@ -1027,8 +1029,12 @@ nav {
 }
 
 .get__started--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 155px;
   width: 100%;
+  text-align: center;
   background-color: #f56565;
   font-weight: 700;
   color: #fff;
@@ -1040,8 +1046,12 @@ nav {
 }
 
 .contact__us--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 155px;
   width: 100%;
+  text-align: center;
   font-weight: 700;
   color: #fff;
   border: 1px solid rgb(160, 174, 192);
@@ -1095,6 +1105,22 @@ nav {
     margin-left: 0;
     margin-top: 16px;
   }
+}
+
+@media (max-width: 500px) {
+  .footer__one--left {
+    min-width: 163px;
+    width: 100%;
+  }
+
+  .get__started--btn {
+    min-width: 155px;
+  }
+
+  .contact__us--btn {
+    min-width: 155px;
+  }
+
 }
 
 /* FOOTER TWO */
@@ -1186,7 +1212,8 @@ nav {
 
 @media (max-width: 768px) {
   .footer__links--list {
-    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: cente;
   }
 
   .links__list {
@@ -1204,5 +1231,17 @@ nav {
 
   .footer__social--list {
     margin-top: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .copyright {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .question__text {
+    font-size: 18px;
   }
 }
