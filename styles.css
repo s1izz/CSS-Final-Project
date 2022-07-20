@@ -306,6 +306,10 @@ nav {
 }
 
 @media (max-width: 640px) {
+  .forty__container {
+    text-align: center;
+  }
+
   .landing__email {
     flex-direction: column;
   }
